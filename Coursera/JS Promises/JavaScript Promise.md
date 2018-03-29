@@ -1,0 +1,46 @@
+JavaScript Promise
+
+​	"The Promise object is used for deferred and asynchronous computations"
+
+.then 
+
+![](promise .png)
+
+There are four stages.
+
+thenning and catching will handle error and action
+
+chaining will introduce how to combine mutiple promises.
+
+[Primers Promise definitions](https://developers.google.com/web/fundamentals/primers/promises)
+
+There are three results: fulfilled (Resolved): It worked
+
+Rejected: It didn't work :(
+
+Pending: Still waiting.
+
+Settled: something happened!
+
+A promise can only settle once. (on main thread and potentially stucking)
+
+resolve leads to return; reject leads to reject. 
+
+document.readyState has three state 'loading' 'interactive' 'complete'
+
+'readystatechange' event will fire as the state change
+
+# Types of request!
+
+XMLHttpRequest.open() thrid argument is true for processing Asynchronously, otherwise synchronously. 
+
+By analyzing and manipulating the **responseXML** property. 
+
+four ways to analyzing XML document:
+
+ 	1.XPath to address(or point to ) parts of it.
+
+2. Manually Parsing and serializing XML to strings or objects.
+3. Using **XMLSerializer** to serialize DOM trees to strings or to files.
+4. RegExp can be used if you always know the content of the XML document beforehand. 
+
