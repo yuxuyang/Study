@@ -87,6 +87,7 @@ oReq.open();
 
 // progress on transfers from the server to the client (downloads)
 function updateProgress (oEvent) {
+  // lengthComputable could be zero or unknown if it is false.
   if (oEvent.lengthComputable) {
     var percentComplete = oEvent.loaded / oEvent.total;
     // ...
@@ -107,4 +108,25 @@ function transferCanceled(evt) {
   console.log("The transfer has been canceled by the user.");
 }
 ```
+
+download transfer is object itself, but upload events are fired on the **XMLHttpRequest.upload** object.
+
+Loadend can detect three load-conditions(abort, load, or error).
+
+Submit forms:	AJAX or FormData API
+
+FormData API can not use [stringifiled](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) data
+
+FileReader API is only required when there is one or more files have been uploaded.
+
+forms can sent in four ways:
+
+	1. POST method, enctype, 'application/x-www-form-urlencoded';
+	2. 'text/plain'
+	3. 'multipart/form-data'
+	4. GET method
+
+
+
+
 
