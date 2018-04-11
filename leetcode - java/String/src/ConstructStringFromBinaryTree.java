@@ -1,13 +1,13 @@
 public class ConstructStringFromBinaryTree {
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode(int x) { val = x; }
-     * }
-     */
+
+
+      public class TreeNode {
+         int val;
+        TreeNode left;
+          TreeNode right;
+          TreeNode(int x) { val = x; }
+      }
+
         public String tree2str(TreeNode t) {
             StringBuilder a = new StringBuilder();
             getString(t, a);
