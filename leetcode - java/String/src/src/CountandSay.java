@@ -25,7 +25,7 @@ Output: "1211"
 
 */
 
-public class Solution {
+public class CountandSay {
     public String countAndSay(int n) {
         if(n <= 0) return "-1";
         String result = "1";

@@ -43,7 +43,6 @@ public class ValidPalindrome {
     }
 
     public static boolean isPalindrome2(String s){
-        public boolean isPalindrome(String s) {
             if (s.isEmpty()) {
                 return true;
             }
@@ -66,7 +65,6 @@ public class ValidPalindrome {
             }
 
             return true;
-        }
     }
 
     /*
@@ -77,7 +75,7 @@ public class ValidPalindrome {
     }
      */
 
-    public static void main(Stringp[] args){
+    public static void main(String[] args){
         String t = "yuuy";
         System.out.println(isPalindrome(t));
     }

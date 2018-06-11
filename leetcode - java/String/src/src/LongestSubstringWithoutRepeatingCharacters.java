@@ -10,8 +10,11 @@ Given "bbbbb", the answer is "b", with the length of 1.
 
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 */
-class Solution{
-	public int lengthOfLongestSubstring(String s){
+
+import java.util.HashMap;
+
+public class LongestSubstringWithoutRepeatingCharacters{
+	private static int lengthOfLongestSubstring(String s){
 		if (s.length() == 0 )return 0;// return 0 when it is an empty string.
       	HashMap<Character, Integer> map = new HashMap<Character, Integer>();
       	int max = 0; // the max substring
@@ -28,8 +31,8 @@ class Solution{
       	}
       	return max;
     }
-    // C++ version
-    public int lengthOfLongestSubstring(String s){
+    /* C++ version
+    public static int lengthOfLongestSubstring2(String s){
     	// for ASCII char sequence, use this as a hashmap.
     	vector<int> charIndex(256, -1);
     	int longest = 0, m = 0;
@@ -39,6 +42,10 @@ class Solution{
     		longest = max(longest, i-m+1);
     	}
     	return longest;
+    }
+    */
+    public static void main(String args[]){
+        System.out.print(lengthOfLongestSubstring("Yuxu"));
     }
 }
 

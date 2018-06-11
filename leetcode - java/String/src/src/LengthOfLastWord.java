@@ -11,8 +11,9 @@ Input: "Hello World"
 Output: 5
 */
 
-class Solution {
-    public int lengthOfLastWord(String s) {
+
+public class LengthOfLastWord {
+    public int lengthOfLastWord1(String s) {
         s = s.trim();
         if (s.length() == 0) return 0;
         int count = 0;
@@ -26,7 +27,7 @@ class Solution {
         }
         return count;
     }
-    public int lengthOfLastWord(String s) {
+    public int lengthOfLastWord2(String s) {
     	return s.trim().length()-s.trim().lastIndexOf(" ")-1;
 	}
 }
